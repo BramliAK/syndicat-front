@@ -1,0 +1,77 @@
+
+ <!-- page content -->
+ <div class="container body">
+  <app-nav></app-nav>
+<div class=" col-xs-offset-1 " style="padding-left: 6.66%;margin-top: -0.6%" >
+<div class="right_col" role="main">
+
+<div class="">
+  
+  
+  <div class="clearfix"></div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Form Design <small>different form elements</small></h2>
+                  
+                    
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <br />
+                  <form id="demo-form2" (ngSubmit)="OnSubmit(LoginForm)" #LoginForm="ngForm" data-parsley-validate class="form-horizontal form-label-left">
+                     
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" >nom <span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input ngModel type="text" id="nom" required="required" name="nom" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">prenom<span class="required">*</span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input ngModel type="text" id="prenom" name="prenom" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">tel</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input ngModel id="tel" class="form-control col-md-7 col-xs-12" type="text" name="tel">
+                      </div>
+                    </div>
+                    
+                      <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12">adresse</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input ngModel id="adresse" class="form-control col-md-7 col-xs-12" type="text" name="adresse">
+                          </div>
+                        </div>
+                        <div class="item form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">email <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input ngModel id="email" required="required" name="email" class="form-control col-md-7 col-xs-12"/>  
+                            </div>
+                          </div>
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                      <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                        
+            <button class="btn btn-primary" type="reset">Reset</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- /page content -->

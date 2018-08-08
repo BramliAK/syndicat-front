@@ -1,0 +1,105 @@
+
+ <!-- page content -->
+ <div class="container body">
+    <app-nav></app-nav>
+  <div class=" col-xs-offset-1 " style="padding-left: 6.66%;margin-top: -0.6%" >
+  <div class="right_col" role="main">
+  
+  <div class="">
+    
+    
+    <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Form Design <small>different form elements</small></h2>
+                    
+                      
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="x_content">
+                    <br />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <span class="glyphicon glyphicon-comment"></span> Chat
+                                        
+                                    </div>
+                                    <div  class="panel-body">
+                                        <ul *ngFor="let item of form"  class="chat">
+                                          
+                                            <li   class="left clearfix"><span class="chat-img pull-left">
+                                                <img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-circle" />
+                                            </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <strong class="primary-font">Jack Sparrow</strong> <small class="pull-right text-muted">
+                                                            <span class="glyphicon glyphicon-time"></span>12 mins ago</small>
+                                                    </div>
+                                                    <p style="width: 500px;">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                            dolor, quis ullamcorper ligula sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                            dolor, quis ullamcorper ligula sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                            dolor, quis ullamcorper ligula sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                            dolor, quis ullamcorper ligula sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                            dolor, quis ullamcorper ligula sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                                            dolor, quis ullamcorper ligula sodales.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            
+                                            <li  class="left1 left clearfix"><span class="chat-img pull-right">
+                                                <img src="http://placehold.it/50/FA6F57/fff&text=ME" alt="User Avatar" class="img-circle" />
+                                            </span>
+                                                <div class="chat-body clearfix">
+                                                    <div class="header">
+                                                        <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                                        <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                                    </div>
+                                                    <p style="width: 500px;">
+                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+                                    dolor, quis ullamcorper ligula sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            
+                                           
+                                        </ul>
+                                    </div>
+                                    <div class="panel-footer">
+                                            <form id="demo-form2" (ngSubmit)="OnSubmit(LoginForm)" #LoginForm="ngForm" data-parsley-validate class="form-horizontal form-label-left">
+                     
+                                                    <div class="input-group">
+                                                      
+                                                      <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input ngModel type="text" id="titre" required="required" name="titre" class="form-control col-md-7 col-xs-12">
+                                                      </div>
+
+                                                    <span class="input-group-btn">
+                                                <button type="submit" class="btn btn-success" id="btn-chat">Submit</button>
+                                              </span>
+                                            </div>
+                        
+                                          </form>
+                                      
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- /page content -->
+  

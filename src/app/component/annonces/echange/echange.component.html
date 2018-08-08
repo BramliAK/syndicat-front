@@ -1,0 +1,105 @@
+
+ <!-- page content -->
+ <div class="container body">
+    <app-nav></app-nav>
+ <div class=" col-xs-offset-1 " style="padding-left: 6.66%;margin-top: -0.6%" >
+ <div class="right_col" role="main">
+
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>E-commerce :: Product Page</h3>
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Form Design <small>different form elements</small></h2>
+                    
+                      
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate  class="form-horizontal form-label-left" (ngSubmit)="OnSubmit(LoginForm)" #LoginForm="ngForm">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Categorie <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              
+                              <select ngModel name="select" class="form-control col-md-7 col-xs-12">
+                                  <option>Choose option</option>
+                                  <option>Option one</option>
+                                  <option>Option two</option>
+                                  <option>Option three</option>
+                                  <option>Option four</option>
+                              </select>
+                            </div>
+                          </div> 
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" >Titre <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input ngModel type="text" id="Titre" required="required" name="Titre" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Tel<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input ngModel type="text" id="Tel" name="Tel" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">echange avec</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input ngModel id="prix" class="form-control col-md-7 col-xs-12" type="text" name="echange">
+                        </div>
+                      </div>
+                      
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">image</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input ngModel id="file" (change)="getFiles($event)" class="form-control col-md-7 col-xs-12" type="file" name="image">
+                            </div>
+                          </div>
+                          <div class="item form-group">
+                              <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Textarea <span class="required">*</span>
+                              </label>
+                              <div class="col-md-6 col-sm-6 col-xs-12">
+                                <textarea ngModel id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
+                              </div>
+                            </div>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="button">Cancel</button>
+						  <button class="btn btn-primary" type="reset">Reset</button>
+                          <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- /page content -->
